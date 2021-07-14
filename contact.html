@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            height: 50px;
+        }
+
+        nav h3 {
+            float: left;
+            margin-left: 30px;
+            margin-top: 13px;
+            font-size: 20px;
+            color: #e67e22;
+        }
+
+        .nav-links {
+            margin-top: 15px;
+            float: right;
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .section-contact {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .section-contact h1,
+        .section-contact h4 {
+            text-align: center;
+            position: absolute;
+            color: #e67e22;
+        }
+
+        .head {
+            position: relative;
+            height: 250px;
+            background-color: aqua;
+            margin-bottom: 50px;
+        }
+
+        .section-contact h1 {
+            font-size: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-bottom: 25px;
+        }
+
+        .section-contact h4 {
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            color: black;
+        }
+
+        .form {
+            display: block;
+            width: 1140px;
+            margin: 0 auto;
+            padding: 0 300px 0 433px;
+        }
+
+        #name{
+            margin-left: 99px;
+        }
+
+        #organization{
+            margin-left: 2px;
+        }
+
+        .male{
+            margin-left: 80px;
+        }
+
+        #continent{
+            margin-left: 70px;
+        }
+
+        input[type="radio"]{
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        #continent {
+            margin-bottom: 15px;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        #submitbtn{
+            margin-top: 10px;
+            padding: 5px;
+            margin-left: 125px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-contact">
+        <nav>
+            <h3>GrowMore</h3>
+            <ul class="nav-links">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="head">
+            <h1>Contact Us</h1>
+            <h4>Feel free to ask any query!</h4>
+        </div>
+
+        <form action="" class="form">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required placeholder="Your Name"><br>
+
+            <label for="organization">Organization Name: </label>
+            <input type="text" name="organizationname" id="organization" required
+                placeholder="Your Organization Name"><br>
+
+            <label for="gender">Gender: &nbsp;</label>
+            <input type="radio" id="gender" value="male" checked name="gender" class="male">
+            <label for="male">Male</label>&nbsp; &nbsp; &nbsp;
+            <input type="radio" id="gender" value="female" checked name="gender">
+            <label for="male">Female</label><br>
+
+            <label for="continent">Continent: </label>
+            <select name="continent" id="continent">
+                <option value="Continents" disabled>Select your Continent</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+            </select><br>
+
+            <button id="submitbtn">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
